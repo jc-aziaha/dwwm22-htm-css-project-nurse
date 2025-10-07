@@ -97,10 +97,39 @@ h6 {
     width: 100%;
 }
 
-/* Approche Orientée Mobile First */
+section {
+    padding: 4rem 2rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* ------------------------------Approche Orientée Mobile First------------------------ */
+/* ------------------------------------------------------------------------------------ */
+
+
+
 /* Mobile */
+.navbar .container #navbar-checkbox, .navbar-list {
+    display: none;
+}
 
+.navbar {
+    background-color: var(--color-white);
+    box-shadow: 0.5rem 0.5rem 1rem var(--box-shadow-color);
+}
 
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 /* Tablet */
