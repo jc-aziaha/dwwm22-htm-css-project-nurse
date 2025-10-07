@@ -1,0 +1,90 @@
+/* ---------------------------------------
+        Mini-Reset & Variables
+---------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+:root {
+    --font-main: 'Poppins', sans-serif;
+    --font-brand: 'Pacifico', cursive;
+
+    --color-primary: #448665;
+    --color-primary-dark: #065e22;
+
+    --color-white: #fff;
+    --color-light-grey: #f5f5f5;
+    --color-light-grey2: #b9c4e917;
+
+    --color-text: #444;
+    --color-black: #333;
+
+    --radial-gradient-background: radial-gradient(#fff, #ffd6d66b);
+    --radial-gradient-button: linear-gradient(80deg, #25b041, #065e22);
+    --radial-gradient-button-hover: linear-gradient(80deg, #065e22, #25b041);
+
+    --box-shadow-color: rgba(40, 39, 39, 0.286);
+    --box-shadow-button: rgba(137, 78, 233, 0.324);
+
+    --spacing-section: 3rem;
+    --border-radius: 8px;
+    --transition-fast: 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    font-size: 1rem; /* 1rem = 16px; */
+    line-height: 1.6;
+}
+
+/* Typographie */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-weight: 600;
+    color: var(--color-black);
+}
+
+h1 { 
+    font-size: 2.5rem;
+}
+
+h2 { 
+    font-size: 2rem;
+}
+
+h3 { 
+    font-size: 1.5rem;
+}
+
+h4 { 
+    font-size: 1.25rem;
+}
+
+h5 { 
+    font-size: 1.125rem;
+}
+
+h6 { 
+    font-size: 1rem;
+}
+
+/* Approche Orientée Mobile First */
+/* Mobile */
+
+
+
+
+/* Tablet */
+
+
+
+
+/* PC */
