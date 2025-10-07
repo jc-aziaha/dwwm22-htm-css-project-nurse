@@ -76,6 +76,27 @@ h6 {
     font-size: 1rem;
 }
 
+.btn-primary {
+    background: var(--radial-gradient-button);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: 700;
+    color: white;
+    font-size: 1.15rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 5px 15px var(--box-shadow-button);
+}
+
+.btn-primary:hover {
+    background: var(--radial-gradient-button-hover);
+}
+
+.w-100 {
+    width: 100%;
+}
+
 /* Approche Orientée Mobile First */
 /* Mobile */
 
