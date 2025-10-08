@@ -189,6 +189,10 @@ section {
     padding-bottom: 2rem;
 }
 
+#hero-section .container .img-box {
+    order: 1;
+}
+
 #hero-section .container .img-box img {
     width: 100%;
     height: auto;
@@ -200,6 +204,7 @@ section {
     justify-content: space-evenly;
     align-items: center;
     gap: 1.5rem;
+    order: 2;
 }
 
 #hero-section .container .text-box .btn-box {
@@ -225,6 +230,19 @@ section {
     .navbar .container #navbar-checkbox:checked + .navbar-list {
         padding-left: 2.8rem;
     }
+
+    #hero-section .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #hero-section .container .text-box {
+        order: 1;
+    }
+
+    #hero-section .container .img-box {
+        order: 2;
+    }
 }
 
 
@@ -245,5 +263,21 @@ section {
 
     .navbar .container .navbar-list a {
         color: var(--color-black);
+    }
+
+    #hero-section .container .text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #hero-section .container .text-box .btn-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
     }
 }
