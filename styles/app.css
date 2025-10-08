@@ -215,8 +215,37 @@ section {
     gap: 1rem;
 }
 
+#about-me-section {
+    background-color: var(--color-white);
+}
 
-/******* Tablet ******/
+#about-me-section .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+#about-me-section .container .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me-section .container .img-box img {
+    width: 100%;
+    height: auto;
+}
+
+#about-me-section .container .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+/****** Tablet ******/
 /* 
  * En partant du plus petit et en arrivant à une largeur minimale de 768px (standard pour les tablettes), 
  * applique tout ce qui se trouve dans les accolades 
@@ -242,6 +271,11 @@ section {
 
     #hero-section .container .img-box {
         order: 2;
+    }
+
+    #about-me-section .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -279,5 +313,13 @@ section {
         justify-content: center;
         align-items: center;
         gap: 1rem;
+    }
+
+    h1 {
+        font-size: 3.3rem;
+    }
+
+    h2 {
+        font-size: 3rem;
     }
 }
