@@ -123,6 +123,10 @@ section {
 .navbar {
     background-color: var(--color-white);
     box-shadow: 0.5rem 0.5rem 1rem var(--box-shadow-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar .container {
@@ -131,10 +135,83 @@ section {
     align-items: center;
 }
 
+.navbar .container #navbar-checkbox:checked + .navbar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    position: absolute;
+    margin-top: 21rem;
+    background-color: var(--color-primary-dark);
+    width: 100%;
+    left: 0;
+    padding-left: 1.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 0.5rem;
+}
 
-/* Tablet */
+.navbar .container .navbar-list a {
+    color: var(--color-white);
+}
+
+.navbar .container .navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar .container .navbar-brand img {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar .container .navbar-brand span {
+    font-family: var(--font-brand);
+    font-size: 1.3rem;
+    color: var(--color-black);
+}
+
+.navbar .container label {
+    font-size: 1.5rem;
+} 
+
+
+/******* Tablet ******/
+
+/* 
+ * En partant du plus petit et en arrivant à une largeur minimale de 768px (standard pour les tablettes), 
+ * applique tout ce qui se trouve dans les accolades 
+*/
+@media screen and (min-width: 768px) {
+
+    /* 
+     * Une fois le menu cliqué, c'est à dire le checkbox coché, 
+     * affiche la liste déroulante qui suit juste l'input de type de checkbox 
+    */
+    .navbar .container #navbar-checkbox:checked + .navbar-list {
+        padding-left: 2.8rem;
+    }
+}
 
 
 
+/******* PC ******/
+@media screen and (min-width: 992px) {
+    .navbar .container label {
+        display: none;
+    }
 
-/* PC */
+    .navbar .container .navbar-list {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        width: 70%;
+        gap: 2rem;
+    }
+
+    .navbar .container .navbar-list a {
+        color: var(--color-black);
+    }
+}
