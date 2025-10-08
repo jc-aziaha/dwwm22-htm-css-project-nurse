@@ -177,9 +177,41 @@ section {
     font-size: 1.5rem;
 } 
 
+#hero-section {
+    background: var(--radial-gradient-background);
+}
+
+#hero-section .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#hero-section .container .img-box img {
+    width: 100%;
+    height: auto;
+}
+
+#hero-section .container .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#hero-section .container .text-box .btn-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
 
 /******* Tablet ******/
-
 /* 
  * En partant du plus petit et en arrivant à une largeur minimale de 768px (standard pour les tablettes), 
  * applique tout ce qui se trouve dans les accolades 
