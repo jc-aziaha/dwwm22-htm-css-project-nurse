@@ -302,6 +302,27 @@ section {
     order: 2;
 }
 
+#area-services-section {
+    background-color: var(--color-white);
+}
+
+#area-services-section .container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#area-services-section .container .map-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#area-services-section .container .map-box iframe {
+    height: 400px;
+    border: 0;
+}
+
 
 /****** Tablet ******/
 /* 
