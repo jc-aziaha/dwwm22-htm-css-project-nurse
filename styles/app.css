@@ -273,6 +273,35 @@ section {
     background-color: var(--color-white);
 }
 
+#highlight-section {
+    background: var(--radial-gradient-background);
+}
+
+#highlight-section .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+#highlight-section .container .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+}
+
+#highlight-section .container .img-box img {
+    width: 100%;
+    height: auto;
+}
+
+#highlight-section .container .text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+}
+
 
 /****** Tablet ******/
 /* 
@@ -309,6 +338,19 @@ section {
 
     #services-section .container {
         width: 70%;
+    }
+
+    #highlight-section .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #highlight-section .container .text-box {
+        order: 1;
+    }
+
+    #highlight-section .container .img-box {
+        order: 2;
     }
 }
 
