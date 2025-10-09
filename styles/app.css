@@ -127,6 +127,7 @@ section {
     padding-bottom: 1rem;
     position: fixed;
     width: 100%;
+    z-index: 999;
 }
 
 .navbar .container {
@@ -244,6 +245,34 @@ section {
     gap: 2rem;
 }
 
+#services-section {
+    background-color: var(--color-light-grey2);
+}
+
+#services-section .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+#services-section .container article {
+    background: var(--color-light-grey2);
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 .1rem .1rem var(--color-black);
+    border-top: .1rem solid var(--color-black);
+    border-bottom: .1rem solid var(--color-black);
+    transition: .5s ease;
+    z-index: 10;
+}
+
+#services-section .container article:hover {
+    box-shadow: .1rem .2rem 0.01rem var(--color-black);
+    transform: scale(1.02);
+    background-color: var(--color-white);
+}
+
 
 /****** Tablet ******/
 /* 
@@ -276,6 +305,10 @@ section {
     #about-me-section .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    #services-section .container {
+        width: 70%;
     }
 }
 
@@ -321,5 +354,11 @@ section {
 
     h2 {
         font-size: 3rem;
+    }
+
+    #services-section .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 90%;
     }
 }
