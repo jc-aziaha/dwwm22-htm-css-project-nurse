@@ -26,6 +26,7 @@
     --radial-gradient-background: radial-gradient(#fff, #ffd6d66b);
     --radial-gradient-button: linear-gradient(80deg, #25b041, #065e22);
     --radial-gradient-button-hover: linear-gradient(80deg, #065e22, #25b041);
+    --radial-gradient-blue: linear-gradient(to right, #3b7bb31f, #22e7f11c);
 
     --box-shadow-color: rgba(40, 39, 39, 0.286);
     --box-shadow-button: rgba(137, 78, 233, 0.324);
@@ -321,6 +322,17 @@ section {
 #area-services-section .container .map-box iframe {
     height: 400px;
     border: 0;
+}
+
+#appointment-section {
+    background: var(--radial-gradient-blue);
+}
+
+#appointment-section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 
